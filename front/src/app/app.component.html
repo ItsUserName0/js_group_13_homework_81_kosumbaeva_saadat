@@ -1,16 +1,19 @@
 <div class="container">
   <div class="general" fxLayout="column" fxLayoutAlign="center center">
     <h1>Shorten your link!</h1>
-    <form>
+    <form #f=ngForm (ngSubmit)="onSubmit()">
       <div fxLayout="column" fxLayoutAlign="center center">
         <mat-form-field appearance="outline">
-          <mat-label>URL:</mat-label>
-          <input matInput required>
+          <mat-label>Enter URL here:</mat-label>
+          <input name="originalUrl" matInput required ngModel>
         </mat-form-field>
-        <button mat-raised-button color="primary">Shorten!</button>
+        <button type="submit" mat-raised-button color="primary">Shorten!</button>
       </div>
     </form>
-    <p>Your link now looks like this:</p>
-    <a href="">http://localhost:8000</a>
+    <ng-container *ngIf="link">
+      <p>Your link now looks like this:</p>
+      <a target="_blank"
+         [href]="'http://localhost:8000/links/'+link.shortUrl">http://localhost:8000/links/{{link.shortUrl}}</a>
+    </ng-container>
   </div>
 </div>
