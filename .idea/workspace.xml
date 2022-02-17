@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e800b53c-6d41-409c-be1e-7c9e2623a1e2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/api/.gitignore" afterDir="false" />
+    <list default="true" id="e800b53c-6d41-409c-be1e-7c9e2623a1e2" name="Changes" comment="API initial commit.">
+      <change afterPath="$PROJECT_DIR$/api/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +42,17 @@
       <option name="presentableId" value="Default" />
       <updated>1645004267440</updated>
       <workItem from="1645004268567" duration="148000" />
+      <workItem from="1645004429775" duration="159000" />
+      <workItem from="1645083592872" duration="967000" />
     </task>
+    <task id="LOCAL-00001" summary="API initial commit.">
+      <created>1645004455780</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1645004455780</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -54,5 +68,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="API initial commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="API initial commit." />
   </component>
 </project>
