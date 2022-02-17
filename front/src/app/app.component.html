@@ -5,9 +5,14 @@
       <div fxLayout="column" fxLayoutAlign="center center">
         <mat-form-field appearance="outline">
           <mat-label>Enter URL here:</mat-label>
-          <input name="originalUrl" matInput required ngModel>
+          <input name="originalUrl" matInput required ngModel #originalUrl="ngModel" appUrl>
+          <mat-error *ngIf="originalUrl.touched && originalUrl.errors?.['required']">Enter the URL!</mat-error>
+          <mat-error *ngIf="originalUrl.touched && originalUrl.errors?.['url']">Enter the correct URL!</mat-error>
         </mat-form-field>
-        <button type="submit" mat-raised-button color="primary">Shorten!</button>
+        <button type="submit" mat-raised-button color="primary" [disabled]="f.invalid || isUploading">
+          <span *ngIf="!isUploading">Shorten!</span>
+          <mat-spinner diameter="35" *ngIf="isUploading"></mat-spinner>
+        </button>
       </div>
     </form>
     <ng-container *ngIf="link">
